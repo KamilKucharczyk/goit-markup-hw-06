@@ -252,6 +252,9 @@ img {
   margin-top: 40px;
   margin-left: 40px;
 }
+.modal a {
+  color: var(--color-background-blue);
+}
 .modal-label {
   display: flex;
   flex-direction: column;
@@ -306,17 +309,17 @@ img {
 }
 .modal-input:focus-within,
 .modal-input:focus-within + .username-icon {
-  border-color: var(--color-background-blue);
+  outline-color: var(--color-background-blue);
   fill: var(--color-background-blue);
 }
 .modal-input:focus-within,
 .modal-input:focus-within + .phone-black-icon {
-  border-color: var(--color-background-blue);
+  outline-color: var(--color-background-blue);
   fill: var(--color-background-blue);
 }
 .modal-input:focus-within,
 .modal-input:focus-within + .email-black-icon {
-  border-color: var(--color-background-blue);
+  outline-color: var(--color-background-blue);
   fill: var(--color-background-blue);
 }
 textarea {
@@ -346,6 +349,11 @@ textarea {
   width: 16px;
   height: 15px;
   border-radius: 2px;
+  margin-right: 8px;
+}
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
 }
 .checkbox-input:checked + .icon-check {
   background-color: var(--color-background-blue);
@@ -353,6 +361,24 @@ textarea {
 }
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+.modal-button {
+  position: absolute;
+  top: 491px;
+  left: 164px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-background-blue);
+  border: var(--color-background-blue);
+  color: var(--text-color-white);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .btn-close {
   position: absolute;
