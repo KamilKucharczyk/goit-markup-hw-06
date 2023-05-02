@@ -338,6 +338,9 @@ textarea {
   padding-top: 12px;
   padding-left: 16px;
 }
+textarea:focus-within {
+  outline-color: var(--color-background-blue);
+}
 .checkbox-input {
   position: absolute;
   width: 100%;
